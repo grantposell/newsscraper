@@ -1,0 +1,28 @@
+{
+  "name": "newsscraper",
+  "version": "1.0.0",
+  "description": "This application scrapes news from a news site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantposell/newsscraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grantposell/newsscraper/issues"
+  },
+  "homepage": "https://github.com/grantposell/newsscraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.3",
+    "morgan": "^1.9.0"
+  }
+}
