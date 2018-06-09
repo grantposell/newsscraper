@@ -18,14 +18,56 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mongo Scraper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/savedarticles">Saved Articles
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="scrapeNewArticles" class="btn btn-primary">Scrape New Articles</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron jumbotron-fluid">
         <div class="container ml-5">
             <h1 class="display-4 ml-4">News Scraper</h1>
-            <p class="lead ml-5">Below news from will appear. </p>
+            <p class="lead ml-5">Below news from will appear from the New York Times. </p>
         </div>
     </div>
+    <div class="modal fade" id="scrapeModal" tabindex="-1" role="dialog" aria-labelledby="modalScrapeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalScrapeTitle">Grab Articles</h5>
+                    <button type="button" class="close close-scrape" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="scrape-message" class="modal-body">
+                    NYT articles added.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-scrape" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <div id="articles"></div>
-    <div id="notes"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>

@@ -10,6 +10,12 @@
     margin-right: auto;
     padding-top: 5%;
 }
+.navbar {
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background-image: url("./concrete-texture.png");
+}
 #articles {
     display: inline-block;
     overflow: auto;
